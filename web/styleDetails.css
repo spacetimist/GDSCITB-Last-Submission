@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #413b35;
+}
+ 
+/* HEADER */
+.banner img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.slogan{
+    position: absolute;
+    top: 40vh;
+    right: 7vw;
+    text-align: left;
+}
+.slogan h1{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+/* CONTENT */
+.content{
+    padding: 0 7vw;
+}
+.cars{
+    display: flex;
+    justify-content: center;
+}
+.cars img{
+    width: 30vw;
+}
+.spec{
+    margin: 1vw;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 13px;
+    padding: 2vw;
+    padding-top: 0;
+    color: white;
+}
+.spec h3{
+    text-align: center;
+    color: white;
+    font-size: 2.2vw;
+}
+.spec h4{
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.price{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.point{
+    padding-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.point p{
+    display: flex;
+    font-size: 1.2vw;
+    justify-content: center;
+    padding-bottom: 0.25vw;
+}
+.fa-solid{
+    color: rgb(167, 161, 159);
+    padding-right: 0.2vw;
+}
+.fa-credit-card{
+    color: white;
+}
+.button{
+    display: flex;
+    margin-bottom: 2vw;
+    justify-content: center;
+}
+
+/* PSEUDO ELEMENT */
+button{
+    background-color: rgb(158, 96, 80);
+    color: white;
+    padding: 15px;
+    border-style: none;
+    width: 220px;
+    border-radius: 10px;
+    font-size: 14px;
+    justify-content: center;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    position: relative;
+}
+button::after{
+    cursor: pointer;
+    content: 'Purchasing Consultation';
+    display: block;
+    position: absolute;
+    padding: 15px;
+    width: 87%;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    background-color:rgb(119, 72, 61);
+    color:white;
+    border-style: none;
+    opacity: 0;
+}
+button:hover::after{
+    opacity: 1;
+}
+
+/* NAV BAR */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #101111;
+    /* padding: atas bawah */
+    /* padding: 20px 50px;  */
+    padding: 1vh 7vw;
+    position: sticky;
+    top: 0;
+}
+.logo img{
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    width: 70px;
+    height: 70px;
+}
+.pages{
+    width: 30%;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-around;
+}
+.pages a{
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; 
+    text-align: none;
+    font-size: 13px;
+    /* padding: 0 2vw; */
+}
+
+/* FOOTER */
+footer{
+    background-color: #101111;
+    padding: 1vh 7vw;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #101111;
+    padding: 1vh 7vw;
+}
+.fa-brands{
+    margin: 1vw;
+    color: white;
+    padding-bottom: 1vh;
+}
+.socials-text span{
+    text-align: center;
+    font-family:"Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 17px;
+    color: white;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1000px){
+    .form{
+        width: 50%;
+    }
+}

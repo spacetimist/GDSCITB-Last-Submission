@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+
+/* NAV */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    /* padding: atas bawah */
+    /* padding: 20px 50px;  */
+    padding: 1vh 7vw;
+    top: 0;
+}
+.logo img{
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    width: 70px;
+    height: 70px;
+}
+.pages{
+    width: 30%;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-around;
+}
+.pages a{
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; 
+    text-align: none;
+    font-size: 13px;
+    /* padding: 0 2vw; */
+}
+
+/* HEADER */
+.banner img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* CONTAINER */
+.title{
+    text-align: center;
+    padding: 4vh;
+    font-size: 2.5vw;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color: #413b35;
+}
+.products{
+    padding: 0 7vw;
+}
+.container{
+    justify-content: center;
+}
+.type-name h3{
+    color: rgb(158, 96, 80);
+    font-size: 1.6vw;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+.type{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+    margin-bottom: 40px;
+}
+.card{
+    text-align: center; 
+}
+.card-img{
+    position: relative;
+    width: 20vw;
+}
+.card-img img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #10111193;
+    color: white;
+    opacity: 0;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+}
+.overlay:hover{
+    opacity: 100;
+}
+.card-text{
+    margin-top: 1vw;
+}   
+
+/* FOOTER */
+footer{
+    background-color: #101111;
+    padding: 1vh 7vw;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #101111;
+    padding: 1vh 7vw;
+}
+.fa-brands{
+    margin: 1vw;
+    color: white;
+    padding-bottom: 1vh;
+}
+.socials-text span{
+    text-align: center;
+    font-family:"Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 17px;
+    color: white;
+}

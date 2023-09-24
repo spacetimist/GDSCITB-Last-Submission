@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci - Form</title>
+    <link rel="stylesheet" href="styleContact.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./assets/logomerci.png" alt="">
+        </div>
+        <div class="pages">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="cars.html">Cars</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form">
+            <div class="title">
+                <h1>How Can We Help?</h1>
+                <!-- horizontal line -->
+                <hr>  
+            </div>
+            <h2>Merci Cars</h2>
+            <h3>Please fill in your details</h3>
+            <div class="salutation">
+                <h4 class="label">Salutation</h4>
+                <input type="radio" name="salutation" value="male"><span>Mr.</span>
+                <input type="radio" name="salutation" value="female"><span>Mrs.</span>
+                <input type="radio" name="salutation" value="female"><span>Ms.</span>
+            </div>
+            <div class="formGroup">
+                <h4 class="label">Full Name</h4>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="formGroup">
+                <h4 class="label">Email</h4>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="formGroup">
+                <h4 class="label">Message</h4>
+                <input type="text" name="message" id="message">
+            </div>
+            <div class="checkbox">
+                <p><span class="terms">
+                    I hereby grant my consent for the data gathered in relation to this contact to be processed and used by PT Merci.
+                </span></p>
+                <input type="checkbox" name="checkbox" id="checkbox"><span>I Agree</span>
+            </div>
+            <a href="contact.html">
+                <button>SUBMIT</button>
+            </a>
+        </div>
+    </div>   
+    <footer>
+        <div class="socials">
+            <div class="socials-text">
+                <span>More about us on our socials</span>
+            </div>
+        </div>
+        <div class="socials">
+            <div class="socials-img">
+                <a href="https://twitter.com/growplantbased?lang=en">
+                    <i class="fa-brands fa-twitter fa-lg"></i>
+                </a>
+                <a href="https://www.facebook.com/growplantbased/">
+                    <i class="fa-brands fa-facebook-f fa-lg"></i>
+                </a>
+                <a href="https://www.instagram.com/growplantbased/">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
